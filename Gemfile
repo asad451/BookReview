@@ -9,6 +9,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'simple_form', '~> 3.1.0'
 gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'devise', '~> 4.4', '>= 4.4.3'
+gem 'paperclip', '~> 4.2.1'
 
 gem 'jquery-rails'
 gem 'turbolinks'
