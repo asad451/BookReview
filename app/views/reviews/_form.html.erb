@@ -1,0 +1,15 @@
+<%= simple_form_for([@book, @book.reviews.build]) do |f| %>  	<!-- @book.reviews.build => because of association, book has many reviews,, and,, @book is instance variable from  reviews controller -->
+
+<div id="rating-form">
+	<label>Rating</label>
+</div>
+<%= f.input :comment %>
+<%= f.button :submit %>
+<% end %>
+
+<script>
+	$('#rating-form').raty({
+		path: '/assets/',
+		scoreName: 'review[rating]'
+	});
+</script>
