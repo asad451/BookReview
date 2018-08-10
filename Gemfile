@@ -1,13 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.10'
-gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 
 gem 'simple_form', '~> 3.1.0'
-gem 'bootstrap-sass', '~> 3.3.4.1'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'paperclip', '~> 4.2.1'
 
@@ -26,3 +25,11 @@ group :development do
   gem 'spring'
 end
 
+group :development do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
